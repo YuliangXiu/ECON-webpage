@@ -45,13 +45,19 @@
     <link rel="stylesheet" href="./static/css/index.css" />
 
     <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+      }
       .render_wrapper {
         position: relative;
         height: 300px;
       }
       .render_wrapper_small {
         position: relative;
-        height: 200px;
+        height: 300px;
       }
       .render_div {
         position: absolute;
@@ -59,12 +65,6 @@
         left: 0;
       }
 
-      #interpolation-image-wrapper-car {
-        text-align: center;
-      }
-      #interpolation-image-wrapper-chair {
-        text-align: center;
-      }
       .nested-columns {
         margin-bottom: 0 !important;
       }
@@ -94,7 +94,7 @@
               <h1 class="title is-1 publication-title">
                 <span style="color: #10768c">ECON</span>:
                 <span style="color: #10768c">E</span>xplicit
-                <span style="color: #10768c">C</span>lothed humans
+                <span style="color: #10768c">C</span>lothed humans<br />
                 <span style="color: #10768c">O</span>btained from
                 <span style="color: #10768c">N</span>ormals
               </h1>
@@ -226,23 +226,137 @@
       <div class="hero-body">
         <div class="container">
           <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-steve render_wrapper">
-              <div id="mesh_chair_1" class="render_div"></div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/1af2662b5026ef82ed0e8b08b6698017.png" />
             </div>
             <div class="item item-steve render_wrapper">
-              <div id="mesh_chair_3" class="render_div"></div>
+              <div id="pose1" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/4ac9ca7a3e34a365c073317f98525add.jpg" />
             </div>
             <div class="item item-steve render_wrapper">
-              <div id="mesh_chair_2" class="render_div"></div>
+              <div id="pose2" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/4d1ed606c3c0a346c8a75507fc81abff.jpg" />
             </div>
             <div class="item item-steve render_wrapper">
-              <div id="mesh_car_1" class="render_div"></div>
+              <div id="pose3" class="render_div"></div>
+            </div>
+
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/5ef3bc939cf82dbd0c541eba41b517c2.jpg" />
             </div>
             <div class="item item-steve render_wrapper">
-              <div id="mesh_car_3" class="render_div"></div>
+              <div id="pose4" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/7530ae51e811b1878fae23ea243a3a30.jpg" />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="pose9" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/68757076df6c98e9d6ba6ed00870daef.jpg" />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="pose12" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/d7e876bc5f9e8277d58e30bd83c7452f.jpg" />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="pose15" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img src="./examples/pose/d5241b4de0cebd2722b05d855a5a9ca6.jpg" />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="pose16" class="render_div"></div>
             </div>
           </div>
-          <div style="text-align: center">Press <b>R</b> to reset views.</div>
+          <div style="text-align: center">
+            ECON on <b>challenging poses</b>&ensp;
+            <i class="fas fa-cube fa-2x fa-spin"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-light is-small">
+      <div class="hero-body">
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/6c0a5def2287d9bfa4a42ee0ce9cb7f9.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth3" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/55cc162cc4fcda1df2236847a52db93a.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth6" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/663dcd6db19490de0b790da430bd5681.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth9" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/2095f20b1390e14d9312913c61c4b621.png"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth11" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/6465c18fc13b862341c33922c79ab490.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth12" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/c7ca6894119f235caba568a7e01684af.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth14" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/da135ecd046333c0dc437a383325c90b.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth15" class="render_div"></div>
+            </div>
+            <div class="item item-steve render_wrapper_small">
+              <img
+                src="./examples/cloth/df90cff51a84dd602024ac3aa03ad182.jpg"
+              />
+            </div>
+            <div class="item item-steve render_wrapper">
+              <div id="cloth16" class="render_div"></div>
+            </div>
+          </div>
+          <div style="text-align: center">
+            ECON on <b>loose clothing</b>&ensp;
+            <i class="fas fa-cube fa-2x fa-spin"></i>
+          </div>
         </div>
       </div>
     </section>
@@ -311,9 +425,12 @@
     <section class="section">
       <div class="container is-max-desktop">
         <!-- Overview. -->
-        <div class="columns is-centered" style="margin-top: 15px">
+        <div
+          class="columns is-centered has-text-centered"
+          style="margin-top: 15px"
+        >
           <div class="column is-full-width">
-            <h2 class="title is-4">Method Overview</h2>
+            <h2 class="title is-3">Method Overview</h2>
             <img src="./static/teaser/overview.jpg" />
             <div class="content has-text-justified" style="padding-top: 15px">
               ECON takes as input an RGB image, $\mathcal{I}$, and a SMPL-X
@@ -332,8 +449,19 @@
           </div>
         </div>
 
+        <div
+          class="columns is-centered has-text-centered"
+          style="margin-top: 15px"
+        >
+          <div class="column is-full-width">
+            <h2 class="title is-3">Multi-person Reconstruction by ECON</h2>
+            <img class="center" src="./static/teaser/crowd.gif" height="250%" />
+          </div>
+        </div>
+        <br /><br />
+
         <!-- Concurrent Work. -->
-        <div class="columns is-centered">
+        <div class="columns is-centered has-text-centered">
           <div class="column is-full-width">
             <h2 class="title is-3">Related Links</h2>
 
@@ -378,11 +506,43 @@
                   >
                   completes the partial 3D data using implicit feature networks.
                 </li>
+                <li><a href="https://virtualhumans.mpi-inf.mpg.de/gin/">Any-Shot GIN</a> uses similar sandwich structure to estimate 3D shapes of novel classes from single RGB image. </li>
               </ul>
             </div>
           </div>
         </div>
         <!--/ Concurrent Work. -->
+
+        <!-- Acknowledgments. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Acknowledgments & Disclosure</h2>
+
+            <div class="content has-text-justified">
+              We thank
+              <a href="https://is.mpg.de/person/lhering">Lea Hering</a> and
+              <a href="https://is.mpg.de/person/rdanecek">Radek Daněček</a> for
+              proof reading,
+              <a href="https://ps.is.mpg.de/person/yfeng">Yao Feng</a>,
+              <a href="https://is.mpg.de/person/hfeng">Haven Feng</a>, and
+              <a href="https://wyliu.com/">Weiyang Liu</a> for their feedback
+              and discussions,
+              <a href="https://ps.is.mpg.de/person/talexiadis"
+                >Tsvetelina Alexiadis</a
+              >
+              for her help with the AMT perceptual study. This project has
+              received funding from the European Union’s Horizon 2020 research
+              and innovation programme under the Marie Skłodowska-Curie grant
+              agreement No.860768 (<a href="https://www.clipe-itn.eu/"
+                >CLIPE Project</a
+              >). MJB has received research gift funds from Adobe, Intel, Nvidia,
+              Meta/Facebook, and Amazon. MJB has financial interests in Amazon,
+              Datagen Technologies, and Meshcapade GmbH.
+            </div>
+          </div>
+        </div>
+        <!-- Acknowledgments. -->
+
       </div>
     </section>
 
@@ -403,12 +563,12 @@
     <footer class="footer">
       <div class="container">
         <div class="content has-text-centered">
-          <a class="icon-link" href="static/nphm.pdf">
+          <a class="icon-link" href="">
             <i class="fas fa-file-pdf"></i>
           </a>
           <a
             class="icon-link"
-            href="https://github.com/SimonGiebenhain"
+            href="https://github.com/YuliangXiu/ECON"
             class="external-link"
             disabled
           >
@@ -422,8 +582,7 @@
                 Source code mainly borrowed from
                 <a href="https://keunhong.com/">Keunhong Park</a>'s
                 <a href="https://nerfies.github.io/">Nerfies website</a> and
-                <a
-                  href="https://simongiebenhain.github.io/"
+                <a href="https://simongiebenhain.github.io/"
                   >Simon Giebenhain's</a
                 >
                 adoption for
@@ -431,8 +590,11 @@
               </p>
               <p style="text-align: center">
                 Please contact
-                <a href="http://xiuyuliang.cn/">Yuliang Xiu</a>
-                for feedback and questions.
+                <a href="mailto: yuliang.xiu@tue.mpg.de">Yuliang Xiu</a>
+                for technical questions. <br />
+                For commercial licensing, please contact
+                <a href="mailto: ps-licensing@tue.mpg.de">ps-licensing</a>, <a href="mailto: oezyurt@max-planck-innovation.de">Gökce Özyurt</a>,
+                <a href="mailto: naureen@meshcapade.com">Naureen Mahmood</a>,<br> <a href="mailto: ip@meshcapade.com">Meshcapade IP</a>, <a href="mailto: black@tue.mpg.de">Michael J. Black</a>.
               </p>
             </div>
           </div>
@@ -461,59 +623,105 @@
       import { PLYLoader } from "./js/PLYLoader.js";
       import { OrbitControls } from "./js/OrbitControls.js";
       let div_to_scene = {
-        mesh_chair_0: {
+        pose1: {
           geo: null,
         },
-        mesh_chair_1: {
+        pose2: {
           geo: null,
         },
-        mesh_chair_2: {
+        pose3: {
           geo: null,
         },
-        mesh_chair_3: {
+        pose4: {
           geo: null,
         },
-        mesh_car_0: {
+        pose5: {
           geo: null,
         },
-        mesh_car_1: {
+        pose6: {
           geo: null,
         },
-        mesh_car_2: {
+        pose7: {
           geo: null,
         },
-        mesh_car_3: {
+        pose8: {
           geo: null,
         },
-      };
-      let div_to_render_scene = {
-        mesh_style_0: {
-          0: null,
-          2: null,
-          3: null,
-          4: null,
-          5: null,
+        pose9: {
+          geo: null,
         },
-        mesh_style_1: {
-          0: null,
-          2: null,
-          3: null,
-          4: null,
-          5: null,
+        pose10: {
+          geo: null,
         },
-        mesh_style_2: {
-          0: null,
-          2: null,
-          3: null,
-          4: null,
-          5: null,
+        pose11: {
+          geo: null,
         },
-        mesh_style_3: {
-          0: null,
-          2: null,
-          3: null,
-          4: null,
-          5: null,
+        pose12: {
+          geo: null,
+        },
+        pose13: {
+          geo: null,
+        },
+        pose14: {
+          geo: null,
+        },
+        pose15: {
+          geo: null,
+        },
+        pose16: {
+          geo: null,
+        },
+
+        cloth1: {
+          geo: null,
+        },
+        cloth2: {
+          geo: null,
+        },
+        cloth3: {
+          geo: null,
+        },
+        cloth4: {
+          geo: null,
+        },
+        cloth5: {
+          geo: null,
+        },
+        cloth6: {
+          geo: null,
+        },
+        cloth7: {
+          geo: null,
+        },
+        cloth8: {
+          geo: null,
+        },
+        cloth9: {
+          geo: null,
+        },
+        cloth10: {
+          geo: null,
+        },
+        cloth11: {
+          geo: null,
+        },
+        cloth12: {
+          geo: null,
+        },
+        cloth13: {
+          geo: null,
+        },
+        cloth14: {
+          geo: null,
+        },
+        cloth15: {
+          geo: null,
+        },
+        cloth16: {
+          geo: null,
+        },
+        cloth17: {
+          geo: null,
         },
       };
       let mouse_button_down = false;
@@ -528,8 +736,7 @@
         let height = container.parentElement.clientHeight;
         console.log(width, height);
         let camera = new THREE.PerspectiveCamera(35, width / height, 0.1, 50);
-        //let camera_init_position = new THREE.Vector3( -1.5, 0.35, 1.2 );
-        let camera_init_position = new THREE.Vector3(0, 0, 1.2);
+        let camera_init_position = new THREE.Vector3(0, 0, 2.2);
         camera_init_position = camera_init_position.multiplyScalar(1.5);
         //if (div_name.includes("style")) {
         //    camera_init_position = camera_init_position.multiplyScalar(1.25)
@@ -549,34 +756,6 @@
         let camera = setup_camera(div_name);
         let orbit_control = create_render_div(camera, div_name, mesh_path);
         list_of_orbit_controls.push(orbit_control);
-      }
-
-      function setup_style_render_divs(div_name, mesh_path) {
-        if (style_camera == null) {
-          style_camera = setup_camera(div_name);
-        }
-        let orbit_control = create_style_render_div(
-          style_camera,
-          div_name,
-          mesh_path,
-          true
-        );
-        list_of_orbit_controls.push(orbit_control);
-        document
-          .getElementById("style_button_0")
-          .addEventListener("click", set_style_0);
-        document
-          .getElementById("style_button_2")
-          .addEventListener("click", set_style_2);
-        document
-          .getElementById("style_button_3")
-          .addEventListener("click", set_style_3);
-        document
-          .getElementById("style_button_4")
-          .addEventListener("click", set_style_4);
-        document
-          .getElementById("style_button_5")
-          .addEventListener("click", set_style_5);
       }
 
       function create_render_div(camera, div_id, mesh_path) {
@@ -603,8 +782,6 @@
             mesh_path,
             function (geometry) {
               geometry.computeVertexNormals();
-              //let material_geo = new THREE.MeshStandardMaterial( { color: 0x444444, flatShading: true, roughness: 0.5, metalness: 0.3 } )
-              //let material_geo = new THREE.MeshPhongMaterial( { color: 0x999999, depthWrite: false} )
               const material_geo = new THREE.MeshPhongMaterial({
                 color: 0xcce6ff,
                 specular: 0x222222,
@@ -625,17 +802,6 @@
           );
 
           // lights
-
-          //div_to_scene[div_id]["geo"].add( new THREE.HemisphereLight( 0x333333, 0x222222) );
-          //div_to_scene[div_id]["geo"].add(new THREE.AmbientLight( 0x333333, 1) );
-          //const directionalLight = new THREE.DirectionalLight( 0xffffff, 1. );
-          //directionalLight.position.set( 1, 1, 1 );
-          //div_to_scene[div_id]["geo"].add( directionalLight );
-          //addShadowedLight(div_to_scene[div_id]["geo"], -5, -5, 5, 0xffffff, 1. );
-          //addShadowedLight(div_to_scene[div_id]["geo"], 1, 1, 1, 0xffffff, 1.35 );
-          //addShadowedLight(div_to_scene[div_id]["geo"], -1, 1, -1, 0xffffff, 1.35 );
-          //addShadowedLight(div_to_scene[div_id]["geo"], 0, -2, 1, 0xffffff, 0.5 );
-          //addShadowedLight(div_to_scene[div_id]["geo"],  0, -1, 2, 0xffffff, 0.5 );
 
           add_lights(div_to_scene[div_id]["geo"]);
 
@@ -711,163 +877,6 @@
         scene.add(spotLight5);
       }
 
-      function add_lightsBACKUP(scene) {
-        scene.add(new THREE.HemisphereLight(0x443333, 0x111122, 0.05));
-        const spotLight = new THREE.SpotLight(0xffffff, 0.6);
-        spotLight.position.set(0.5, 0.5, 1);
-        const spotLight2 = new THREE.SpotLight(0xffffff, 0.3);
-        spotLight2.position.set(-0.75, 0.2, 0);
-        const spotLight3 = new THREE.SpotLight(0xffffff, 0.3);
-        spotLight3.position.set(-0.5, 0, 1);
-        const spotLight4 = new THREE.SpotLight(0xffffff, 0.3);
-        spotLight4.position.set(0.5, 0.5, -1);
-        const spotLight5 = new THREE.SpotLight(0xffffff, 0.15);
-        spotLight5.position.set(0, -1.5, 0);
-        ////spotLight.position.multiplyScalar( 700 );
-        scene.add(spotLight);
-        scene.add(spotLight2);
-        //div_to_scene[div_id]["geo"].add( spotLight3 );
-        scene.add(spotLight4);
-        scene.add(spotLight5);
-      }
-
-      function create_style_render_div(camera, div_id, mesh_path) {
-        let container;
-        let renderer, controls;
-
-        init();
-        animate();
-
-        function init() {
-          container = document.getElementById(div_id);
-          let width = container.parentElement.clientWidth;
-          let height = container.parentElement.clientHeight;
-
-          div_to_render_scene[div_id]["0"] = new THREE.Scene();
-          div_to_render_scene[div_id]["1"] = new THREE.Scene();
-          div_to_render_scene[div_id]["2"] = new THREE.Scene();
-          div_to_render_scene[div_id]["3"] = new THREE.Scene();
-          div_to_render_scene[div_id]["4"] = new THREE.Scene();
-          div_to_render_scene[div_id]["5"] = new THREE.Scene();
-          div_to_render_scene[div_id]["6"] = new THREE.Scene();
-          div_to_render_scene[div_id]["0"].background = new THREE.Color(
-            0xffffff
-          );
-          div_to_render_scene[div_id]["1"].background = new THREE.Color(
-            0xffffff
-          );
-          div_to_render_scene[div_id]["2"].background = new THREE.Color(
-            0xffffff
-          );
-          div_to_render_scene[div_id]["3"].background = new THREE.Color(
-            0xffffff
-          );
-          div_to_render_scene[div_id]["4"].background = new THREE.Color(
-            0xffffff
-          );
-          div_to_render_scene[div_id]["5"].background = new THREE.Color(
-            0xffffff
-          );
-          div_to_render_scene[div_id]["6"].background = new THREE.Color(
-            0xffffff
-          );
-
-          // PLY file
-
-          const loader = new PLYLoader();
-          ["0", "2", "3", "4", "5"].forEach((id) => {
-            loader.load(
-              mesh_path + id + ".ply",
-              function (geometry) {
-                geometry.computeVertexNormals();
-                //let material = new THREE.MeshStandardMaterial( { color: 0xffffff} );
-                const material = new THREE.MeshPhongMaterial({
-                  color: 0xcce6ff,
-                  specular: 0x222222,
-                  shininess: 25,
-                });
-                const mesh_color = new THREE.Mesh(geometry, material);
-                div_to_render_scene[div_id][id].add(mesh_color);
-                //if (id === "0") {
-                //let material_geo = new THREE.MeshStandardMaterial( { color: 0x444444, flatShading: true } )
-                //const mesh_geo = new THREE.Mesh( geometry, material_geo );
-                //div_to_render_scene[div_id]["geo"].add( mesh_geo );
-                //}
-                //div_to_render_scene[div_id][id].add( new THREE.HemisphereLight( 0x333333, 0x222222 ) );
-                //addShadowedLight(div_to_render_scene[div_id][id], 1, 1, 1, 0xffffff, 1.35 );
-                //addShadowedLight(div_to_render_scene[div_id][id],  0.5, 1, - 1, 0xffffff, 1 );
-                add_lights(div_to_render_scene[div_id][id]);
-              },
-              (xhr) => {
-                console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-              },
-              (error) => {
-                console.log(error);
-              }
-            );
-          });
-
-          // renderer
-
-          renderer = new THREE.WebGLRenderer({ antialias: true });
-          renderer.setPixelRatio(window.devicePixelRatio);
-          renderer.setSize(width, height);
-          renderer.outputEncoding = THREE.sRGBEncoding;
-
-          renderer.shadowMap.enabled = true;
-
-          container.appendChild(renderer.domElement);
-
-          controls = new OrbitControls(camera, renderer.domElement);
-          controls.enableDamping = false;
-
-          // resize
-
-          window.addEventListener("resize", onWindowResize);
-        }
-        function onWindowResize() {
-          let width = container.clientWidth;
-          let height = container.clientHeight;
-          camera.aspect = width / height;
-          camera.updateProjectionMatrix();
-          renderer.setSize(width, height);
-        }
-        function animate() {
-          requestAnimationFrame(animate);
-          render();
-        }
-
-        function render() {
-          let scene = div_to_render_scene[div_id][style_id];
-          renderer.render(scene, camera);
-          controls.update();
-        }
-
-        return controls;
-      }
-
-      function addShadowedLight(scene, x, y, z, color, intensity) {
-        const directionalLight = new THREE.DirectionalLight(color, intensity);
-        directionalLight.position.set(x, y, z);
-        scene.add(directionalLight);
-
-        directionalLight.castShadow = true;
-
-        const d = 1;
-        directionalLight.shadow.camera.left = -d;
-        directionalLight.shadow.camera.right = d;
-        directionalLight.shadow.camera.top = d;
-        directionalLight.shadow.camera.bottom = -d;
-
-        directionalLight.shadow.camera.near = 1;
-        directionalLight.shadow.camera.far = 4;
-
-        directionalLight.shadow.mapSize.width = 1024;
-        directionalLight.shadow.mapSize.height = 1024;
-
-        directionalLight.shadow.bias = -0.001;
-      }
-
       document.addEventListener("keydown", logKey);
 
       function logKey(evt) {
@@ -926,20 +935,71 @@
       window.onload = function () {
         let slider = document.getElementsByClassName("slider")[0];
         slider.removeAttribute("tabIndex");
-        // slider.addEventListener("mouseout", reset_orbit_controls);
-        setup_render_divs("mesh_chair_1", "./models/mesh_0049.ply");
-        setup_render_divs("mesh_chair_2", "./models/mesh_0063.ply");
-        setup_render_divs("mesh_chair_3", "./models/mesh_0079.ply");
-        setup_render_divs("mesh_car_1", "./models/mesh_0112.ply");
-        setup_render_divs("mesh_car_3", "./models/mesh_0238.ply");
-        //setup_style_render_divs("mesh_style_0", './models/chair_style_0')
-        //setup_style_render_divs("mesh_style_1", './models/chair_style_1')
-        //setup_style_render_divs("mesh_style_2", './models/chair_style_2')
-        //setup_style_render_divs("mesh_style_3", './models/chair_style_3')
-        setup_style_render_divs("mesh_style_0", "./models/mesh_mustafa_");
-        setup_style_render_divs("mesh_style_1", "./models/mesh_id98_");
-        setup_style_render_divs("mesh_style_2", "./models/mesh_id97_");
-        setup_style_render_divs("mesh_style_3", "./models/mesh_id95_");
+        setup_render_divs(
+          "pose1",
+          "./models/pose/1af2662b5026ef82ed0e8b08b6698017_0_full.ply"
+        );
+        setup_render_divs(
+          "pose2",
+          "./models/pose/4ac9ca7a3e34a365c073317f98525add_0_full.ply"
+        );
+        setup_render_divs(
+          "pose3",
+          "./models/pose/4d1ed606c3c0a346c8a75507fc81abff_0_full.ply"
+        );
+        setup_render_divs(
+          "pose4",
+          "./models/pose/5ef3bc939cf82dbd0c541eba41b517c2_0_full.ply"
+        );
+        setup_render_divs(
+          "pose9",
+          "./models/pose/7530ae51e811b1878fae23ea243a3a30_0_full.ply"
+        );
+        setup_render_divs(
+          "pose12",
+          "./models/pose/68757076df6c98e9d6ba6ed00870daef_0_full.ply"
+        );
+        setup_render_divs(
+          "pose15",
+          "./models/pose/d7e876bc5f9e8277d58e30bd83c7452f_0_full.ply"
+        );
+        setup_render_divs(
+          "pose16",
+          "./models/pose/d5241b4de0cebd2722b05d855a5a9ca6_0_full.ply"
+        );
+
+        setup_render_divs(
+          "cloth3",
+          "./models/cloth/6c0a5def2287d9bfa4a42ee0ce9cb7f9_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth6",
+          "./models/cloth/55cc162cc4fcda1df2236847a52db93a_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth9",
+          "./models/cloth/663dcd6db19490de0b790da430bd5681_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth11",
+          "./models/cloth/2095f20b1390e14d9312913c61c4b621_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth12",
+          "./models/cloth/6465c18fc13b862341c33922c79ab490_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth14",
+          "./models/cloth/c7ca6894119f235caba568a7e01684af_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth15",
+          "./models/cloth/da135ecd046333c0dc437a383325c90b_0_full.ply"
+        );
+        setup_render_divs(
+          "cloth16",
+          "./models/cloth/df90cff51a84dd602024ac3aa03ad182_0_full.ply"
+        );
       };
     </script>
   </body>
