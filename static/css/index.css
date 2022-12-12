@@ -322,3 +322,10 @@ body {
   width: 2100%;
   max-width: none !important;
 }
+
+
+table img.rounded-corners {
+  padding: 10px;
+  border-radius: 20px;
+}
+

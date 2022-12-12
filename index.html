@@ -454,23 +454,23 @@
           style="margin-top: 15px"
         >
           <div class="column is-full-width">
-            <h2 class="title is-3">
-              Run ECON on
-              <a href="https://stylegan-human.github.io/">SHHQ Dataset</a>
-            </h2>
-            <img class="center" src="./static/teaser/SHHQ.gif" />
+            <h2 class="title is-3">Applications</h2>
+            <table class="bordered">
+              <tr>
+                <th><img src="./static/teaser/SHHQ.gif" class="rounded-corners"/></th>
+                <th><img src="./static/teaser/crowd.gif" class="rounded-corners"/></th>
+              </tr>
+              <tr>
+                <th>
+                  Run ECON on
+                  <a href="https://stylegan-human.github.io/">SHHQ Dataset</a>
+                </th>
+                <th>Multi-person Reconstruction by ECON</th>
+              </tr>
+            </table>
           </div>
         </div>
 
-        <div
-          class="columns is-centered has-text-centered"
-          style="margin-top: 15px"
-        >
-          <div class="column is-full-width">
-            <h2 class="title is-3">Multi-person Reconstruction by ECON</h2>
-            <img class="center" src="./static/teaser/crowd.gif" width="200%" />
-          </div>
-        </div>
         <br /><br />
 
         <!-- Concurrent Work. -->
@@ -609,7 +609,7 @@
               <p style="text-align: center">
                 For technical questions, please contact
                 <a href="mailto: yuliang.xiu@tue.mpg.de">Yuliang Xiu</a><br />
-                For commercial licensing, please contact 
+                For commercial licensing, please contact
                 <a href="mailto: ps-licensing@tue.mpg.de">ps-licensing</a>
               </p>
             </div>
@@ -885,7 +885,7 @@
         spotLight4.position.set(0.0, 1, -2);
         const spotLight5 = new THREE.SpotLight(0xffffff, 0.05);
         spotLight5.position.set(0, -2.5, -1);
-        spotLight.position.multiplyScalar( 10 );
+        spotLight.position.multiplyScalar(10);
         scene.add(spotLight);
         scene.add(spotLight2);
         scene.add(spotLight3);
